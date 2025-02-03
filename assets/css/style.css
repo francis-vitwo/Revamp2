@@ -4846,7 +4846,7 @@ template {
 
 .slider-sub {
   width: 100%;
-  height: 400px;
+  height: 450px;
   position: relative;
 }
 
@@ -4859,6 +4859,9 @@ template {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: right;
+  backdrop-filter: hue-rotate(352deg);
+  filter: opacity(0.4);
 }
 
 .slider-sub .container {
@@ -4891,7 +4894,7 @@ template {
 
 @media (max-width: 767.99px) {
   .slider-sub {
-    height: 300px;
+    height: 450px;
   }
 
   .slider-sub .container .text-nav {
@@ -9674,6 +9677,56 @@ input::-webkit-inner-spin-button {
 }
 
 @media only screen and (max-width: 1023px) {
+
+  .pt-80 {
+    padding-top: 0;
+  }
+
+  .bg-img {
+    margin: 10px 0;
+  }
+
+  .slider-sub.banner {
+    height: 550px;
+  }
+
+  .slider-sub.banner .bg-img {
+    margin: 0;
+  }
+
+  .slider-sub.banner .bg-img img {
+    filter: brightness(0.6999);
+  }
+
+  .slider-sub.banner .content-para .heading4 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.2;
+    width: 250px;
+  }
+
+  .slider-sub.banner .content-para .body2 {
+    font-size: 11px !important;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 250px;
+  }
+
+  .slider-sub.banner .service-form .heading .heading5 {
+    font-size: 15px;
+  }
+
+  .slider-sub.banner .service-form form input,
+  .slider-sub.banner .service-form form span {
+    height: 0;
+    margin: 5px 0 0;
+    border-radius: 6px;
+  }
+
+  .slider-sub.banner .service-form form .button-share {
+    width: 100%;
+  }
+
   #thank-you.page .thank-you-card {
     left: -30px;
     width: 350px;
@@ -10248,10 +10301,10 @@ input::-webkit-inner-spin-button {
   }
 
   body .slider .slide img {
-    width: 50px;
+    width: 40px;
     height: 50px;
     object-fit: contain;
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 0.5;
   }
 
   .form-cta-block .container>.row>div:last-child .form-block button {
@@ -11031,6 +11084,20 @@ input::-webkit-inner-spin-button {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+
+  /* .slider-sub {
+    height: 300px;
+  }
+
+  .slider-sub .container .text-nav {
+    margin-top: 123px;
+    width: 65%;
+    background: #ffffff4a;
+    backdrop-filter: blur(3px);
+    border-radius: 25px;
+    padding: 25px 14px;
+  } */
+
   .mt-88 {
     margin-top: 3.2rem;
   }

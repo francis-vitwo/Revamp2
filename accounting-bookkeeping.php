@@ -8,91 +8,7 @@
 </head>
 
 <body>
-    <!-- <div id="header">
-        <div class="style-subpage style-home-two">
-            <div class="header-menu style-one bg-white">
-                <div class="container flex-between h-80"><a class="menu-left-block" href=""><img
-                            class="menu-logo w-88 h-60" src="./assets/images/logo/dark-logo.png" alt="logo" /><img
-                            class="menu-logo display-none" src="./assets/images/" alt="logo" /></a>
-                    <div class="menu-center-block h-100">
-                        <ul class="menu-nav flex-item-center h-100 sub-nav">
-                            <li class="nav-item h-100 flex-center home sub-nav-item active"><a class="nav-link"
-                                    href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item h-100 flex-center about"><a class="nav-link" href="./about.html">About
-                                    Us</a>
-                            </li>
-                            <li class="nav-item h-100 flex-center services"><a class="nav-link"
-                                    href="./virtual-cfo-services.html">Virtual CFO Services </a>
-                            </li>
-                            <li class="nav-item h-100 flex-center blog"><a class="nav-link"
-                                    href="./blogs&resources.html">Blogs &
-                                    Resources </a>
-                            </li>
-                            <li class="nav-item h-100 flex-center contact"><a class="nav-link"
-                                    href="./career.html">Career </a>
-                            </li>
-                            <li class="nav-item h-100 flex-center contact"><a class="btn btn-primary text-black-40"
-                                    href="./contact.html" role="button">Get in Touch!</a>
-                        </ul>
-                    </div>
-                    <div class="menu-right-block flex-item-center gap-12">
-                        <div class="text-button-small display-none">Follow Us</div>
-                        <div class="list-social flex-item-center gap-10 style-two">
-                            <a class="bora-50 w-28 h-28 flex-center facebook"
-                                href="https://www.facebook.com/profile.php?id=100087556892122" target="_blank">
-                                <i class="icon-facebook fs-14 fa-brands fa-facebook-f"></i>
-                            </a>
-                            <a class="bora-50 w-28 h-28 flex-center linkedin"
-                                href="https://www.linkedin.com/company/vitwo" target="_blank"><i
-                                    class="icon-in fs-14  ml-2  fa-brands fa-linkedin-in">
-                                </i>
-                            </a>
-                            <a class="bora-50 w-28 h-28 flex-center  instagram"
-                                href="https://www.instagram.com/vitwofinance/?igshid=YmMyMTA2M2Y%3D" target="_blank">
-                                <i class="icon-insta fs-14  fa-brands fa-instagram fa-1x"></i>
-                            </a>
-                            <a class="bora-50 w-28 h-28 flex-center youtube "
-                                href="https://www.youtube.com/channel/UCtdZ2F5LXTclksLjRtAZKEg/featured"
-                                target="_blank">
-                                <i class="icon-youtube fs-14  fa-brands fa-youtube"></i>
-                            </a>
-                        </div>
-                        <div class="menu-humburger display-none pointer"><i class="ph-bold ph-list"></i></div>
-                    </div>
-                </div>
 
-                <div id="menu-mobile-block">
-                    <div class="menu-mobile-main">
-                        <div class="container">
-                            <ul class="menu-nav-mobile h-100 pt-4 pb-4 sub-nav-mobile">
-                                <li
-                                    class="nav-item-mobile h-100 flex-column gap-8 pt-8 pb-8 pl-12 pr-12 pointer home sub-nav-item active">
-                                    <a class="fs-14 nav-link-mobile" href="./index.html">Home </a>
-                                </li>
-                                <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer about">
-                                    <a class="fs-14 nav-link-mobile" href="./about.html.html">About Us</a>
-                                </li>
-                                <li
-                                    class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer services">
-                                    <a class="fs-14 nav-link-mobile" href="./virtual-cfo-services.html">Virtual CFO
-                                        Services </a>
-                                </li>
-                                <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer blog">
-                                    <a class="fs-14 nav-link-mobile" href="./blogs&resources.html">Blogs & Resources
-                                    </a>
-                                </li>
-                                <li
-                                    class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer contact">
-                                    <a class="fs-14 nav-link-mobile" href="./career.html">Career </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <?php include "include/navbar.php" ?>
 
@@ -129,40 +45,36 @@
                                 <div class="heading5 dark mt-12">Fill out the few details</div>
                             </div>
 
-                            <form class="row g-3 needs-validation" novalidate>
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Name"
-                                        required>
-                                    <div class="valid-feedback">
-                                        Looks good!
+                            <form class="form-block flex-columns-between gap-20" action="./thankyou.php" id="serviceBookDemo" method="post">
+                                <div class="row row-gap-20">
+                                    <div class="col-12 col-sm-12">
+                                        <input
+                                            class="form-control w-100 bg-surface text-black-40 caption1 pl-16 pr-16 pt-12 pb-12 bora-8"
+                                            type="text" id="serviceName" placeholder="Name" required />
+                                    </div>
+                                    <div class="col-12">
+
+                                        <input
+                                            class="w-100 bg-surface text-black-40 caption1 pl-16 pr-16 pt-12 pb-12 bora-8"
+                                            type="number" id="servicePhone" aria-describedby="Phone"
+                                            placeholder="Phone No." required />
+                                    </div>
+                                    <div class="col-12">
+                                        <input
+                                            class="form-control w-100 bg-surface text-black-40 caption1 pl-16 pr-16 pt-12 pb-12 bora-8"
+                                            type="email" id="serviceEmail" placeholder="Email" required />
+                                    </div>
+                                    <div class="col-12">
+                                        <input
+                                            class="form-control w-100 bg-surface text-black-40 caption1 pl-16 pr-16 pt-12 pb-12 bora-8"
+                                            type="text" id="serviceCompany" placeholder="Company Name" required />
                                     </div>
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="input-group has-validation">
-                                        <span class="input-group-text" id="inputGroupPrepend">+91</span>
-                                        <input type="number" class="form-control" id="validationCustomNumber"
-                                            aria-describedby="inputGroupPrepend" placeholder="Number" required>
-                                        <div class="invalid-feedback">
-                                            Please enter your number.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" id="validationEmail" placeholder="Email"
-                                        required>
-                                    <div class="invalid-feedback">
-                                        Please provide a valid Email.
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" id="validationCustom01"
-                                        placeholder="Company Name" required>
-                                    <div class="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary" type="submit">Submit form</button>
+                                <div class="button-block">
+                                    <button
+                                        class="button-share bg-on-surface text-button text-white pl-36 pr-36 pt-12 pb-12 bora-48"
+                                        type="submit" id="serviceSubmitBtn">Send
+                                        Message</button>
                                 </div>
                             </form>
 
@@ -322,7 +234,7 @@
                 </div>
                 <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 pl-55">
                     <div class="bg-img w-100 overflow-hidden bora-20"><img class="w-100 h-100 hover-scale display-block"
-                            src="./assets/images/services/ac-bk/DSC01580.JPG" alt="" /></div>
+                            src="./assets/images/services/ac-bk/DSC06016 (1).jpg" alt="" /></div>
                 </div>
             </div>
         </div>
